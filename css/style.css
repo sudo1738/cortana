@@ -1,22 +1,56 @@
-/* 🔹 Reset & Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+/* 🔹 Section Styles */
+section {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-/* 🔹 Body (Dark Mode with Proper Contrast) */
-body {
-    background-color: #121212;
-    color: #EAEAEA;  /* Light gray text for readability */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
+section h2 {
+    font-size: 32px;
+    color: #FF9900;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #EAEAEA;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    font-size: 18px;
+    color: #EAEAEA;
+    margin: 5px 0;
+}
+
+/* 🔹 Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, transform 0.2s;
     text-align: center;
-    padding: 20px;
+}
+
+.button:hover {
+    background-color: #E68A00;
+    transform: scale(1.05);
 }
 
 /* 🔹 Navbar */
@@ -29,6 +63,7 @@ body {
     left: 0;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
 }
 
 #navbar a {
@@ -42,115 +77,4 @@ body {
 
 #navbar a:hover {
     color: #FF9900;
-}
-
-/* 🔹 Header */
-#header {
-    margin-top: 100px; /* Prevents overlap with navbar */
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding: 20px;
-}
-
-/* 🔹 Main Content */
-#content {
-    max-width: 900px;
-    padding: 40px;
-    margin-top: 20px;
-    background: #1E1E1E;
-    border-radius: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-    overflow: auto; /* Prevents text from getting cut off */
-}
-
-/* 🔹 Section Styles */
-section {
-    background-color: #1E1E1E;
-    color: #EAEAEA;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-section h2 {
-    font-size: 26px;
-    color: #FF9900;
-}
-
-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #EAEAEA;
-}
-
-/* 🔹 Footer (Now Stays at Bottom Properly) */
-#footer {
-    width: 100%;
-    background-color: #1f1f1f;
-    padding: 15px;
-    text-align: center;
-    margin-top: auto;
-}
-
-#footer p {
-    font-size: 14px;
-    color: #bbb;
-}
-
-/* 🔹 Buttons */
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #FF9900;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 15px;
-    font-weight: 600;
-    transition: background 0.3s ease-in-out, transform 0.2s;
-}
-
-.button:hover {
-    background-color: #E68A00;
-    transform: scale(1.05);
-}
-
-/* 🔹 Link Styling */
-a {
-    text-decoration: none;
-    color: #FF9900;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #E68A00;
-}
-
-#content a {
-    text-decoration: none;
-    color: #FF9900;
-}
-
-#content a:hover {
-    text-decoration: underline;
-    color: #E68A00;
-}
-
-/* 🔹 Responsive Design */
-@media (max-width: 768px) {
-    #content {
-        width: 95%;
-        padding: 20px;
-    }
-
-    #navbar {
-        font-size: 16px;
-    }
-
-    .button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
 }
