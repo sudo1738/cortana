@@ -1,24 +1,25 @@
-/* Reset and Basic Styles */
+/* 🔹 Reset & Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-/* General Layout */
+/* 🔹 Body (Dark Mode with Proper Contrast) */
 body {
     background-color: #121212;
-    color: #f1f1f1;
+    color: #EAEAEA;  /* Light gray for readability */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+    padding: 20px;
 }
 
-/* Navbar */
+/* 🔹 Navbar */
 #navbar {
     width: 100%;
     background-color: #1f1f1f;
@@ -27,42 +28,49 @@ body {
     top: 0;
     left: 0;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #navbar a {
-    color: #f1f1f1;
+    color: #EAEAEA;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
 #navbar a:hover {
-    color: #ff9900;
+    color: #FF9900;
 }
 
-/* Header */
+/* 🔹 Header */
 #header {
-    margin-top: 60px;
-    font-size: 24px;
+    margin-top: 80px;
+    font-size: 28px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     padding: 20px;
 }
 
-/* Main Content */
+/* 🔹 Main Content */
 #content {
-    max-width: 800px;
-    padding: 20px;
+    max-width: 900px;
+    padding: 40px;
     margin-top: 20px;
+    background: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+/* 🔹 Footer (Now Stays at Bottom Properly) */
 #footer {
     width: 100%;
     background-color: #1f1f1f;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
     text-align: center;
+    margin-top: auto;
 }
 
 #footer p {
@@ -70,17 +78,37 @@ body {
     color: #bbb;
 }
 
-/* Buttons */
+/* 🔹 Buttons */
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff9900;
+    padding: 12px 24px;
+    background-color: #FF9900;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 8px;
+    margin: 15px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .button:hover {
-    background-color: #e68a00;
+    background-color: #E68A00;
+    transform: scale(1.05);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    #content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #navbar {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
