@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cortana - Your AI Assistant</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cortana</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div id="navbar"></div>
-    </header>
 
-    <main>
-        <h1>Talk to Cortana</h1>
-        <div id="chatbox">
-            <p><strong>Cortana:</strong> How can I assist you today?</p>
-        </div>
-        <input type="text" id="userInput" placeholder="Type a message...">
-        <button onclick="sendMessage()">Send</button>
-    </main>
+    <div id="navbar"></div>  
+    <div id="header"></div>  
+    <div id="content"></div>  
+    <div id="footer"></div>  
 
-    <div id="footer"></div>
-    
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("content").innerHTML = '<object type="text/html" data="components/cortana_section.html"></object>';
+    </script>
+    <script src="script.js"></script>  
+
 </body>
 </html>

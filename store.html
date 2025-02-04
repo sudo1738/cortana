@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store - Your Name</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div id="navbar"></div>
-    </header>
 
-    <main>
-        <h1>Store</h1>
-        <p>Products will be listed here.</p>
-    </main>
+    <div id="navbar"></div>  
+    <div id="header"></div>  
+    <div id="content"></div>  
+    <div id="footer"></div>  
 
-    <div id="footer"></div>
-
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("content").innerHTML = '<object type="text/html" data="components/store_section.html"></object>';
+    </script>
+    <script src="script.js"></script>  
 
 </body>
 </html>

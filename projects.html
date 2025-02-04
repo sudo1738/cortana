@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Your Name</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div id="navbar"></div>
-    </header>
 
-    <main>
-        <h1>Projects</h1>
-        <section>
-            <h2>Project 1</h2>
-            <p>Description of the project.</p>
-            <a href="#">View on GitHub</a>
-        </section>
-    </main>
+    <div id="navbar"></div>  
+    <div id="header"></div>  
+    <div id="content"></div>  
+    <div id="footer"></div>  
 
-    <div id="footer"></div>
+    <script>
+        document.getElementById("content").innerHTML = '<object type="text/html" data="components/projects_section.html"></object>';
+    </script>
+    <script src="script.js"></script>  
 
-    <script src="script.js"></script>
 </body>
 </html>
