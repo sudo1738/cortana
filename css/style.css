@@ -67,8 +67,11 @@ body {
 
 /* 🔹 Section Styles */
 section {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
     padding: 20px;
-    margin-bottom: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
 section h2 {
@@ -113,23 +116,27 @@ section p {
     background-color: #E68A00;
     transform: scale(1.05);
 }
-section {
-    background-color: #1E1E1E;
-    color: #EAEAEA;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
 
+/* 🔹 Link Styling */
 a {
     text-decoration: none;
     color: #FF9900;
 }
+
 a:hover {
     text-decoration: underline;
     color: #E68A00;
 }
 
+#content a {
+    text-decoration: none;
+    color: #FF9900;
+}
+
+#content a:hover {
+    text-decoration: underline;
+    color: #E68A00;
+}
 
 /* 🔹 Responsive Design */
 @media (max-width: 768px) {
@@ -146,22 +153,4 @@ a:hover {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
-
-#content section {
-    background-color: #1E1E1E;
-    color: #EAEAEA;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-#content a {
-    text-decoration: none;
-    color: #FF9900;
-}
-
-#content a:hover {
-    text-decoration: underline;
-    color: #E68A00;
 }
