@@ -111,8 +111,7 @@ section p {
 
 .button:hover {
     background-color: #E68A00;
-    tran
-    sform: scale(1.05);
+    transform: scale(1.05);
 }
 section {
     background-color: #1E1E1E;
