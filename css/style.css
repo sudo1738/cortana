@@ -9,11 +9,11 @@
 /* 🔹 Body (Dark Mode with Proper Contrast) */
 body {
     background-color: #121212;
-    color: #EAEAEA;  /* Light gray for readability */
+    color: #EAEAEA;  /* Light gray text for readability */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 100vh;
     text-align: center;
     padding: 20px;
@@ -46,8 +46,8 @@ body {
 
 /* 🔹 Header */
 #header {
-    margin-top: 80px;
-    font-size: 28px;
+    margin-top: 100px; /* Prevents overlap with navbar */
+    font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -62,6 +62,24 @@ body {
     background: #1E1E1E;
     border-radius: 10px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: auto; /* Prevents text from getting cut off */
+}
+
+/* 🔹 Section Styles */
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 26px;
+    color: #FF9900;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #EAEAEA;
 }
 
 /* 🔹 Footer (Now Stays at Bottom Properly) */
