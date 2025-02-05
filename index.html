@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cortana - os</title>
+    <title>Cortana - OS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>send me doge DSAthSwjXyMADL22nY8JxPjrnGSxDpj4zT</h1>
-
-    <img style="margin:auto;" type="GIF" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGFmdWQ1anhlb2htZGZ4YXE5YzA0eWJxc2ZqeG0ybTdhM21hbjBueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fkC8jsF2sktzylNp5Z/giphy.gif">
+    <h1>Cortana AI Chatbot</h1>
+    <div id="chat-display"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+    <script src="https://cdn.jsdelivr.net/npm/@huggingface/inference@2.6.1/dist/index.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
